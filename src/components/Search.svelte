@@ -78,18 +78,18 @@
         display: grid;
         grid-template-columns: 1fr repeat(4, 120px);
         grid-gap: 10px;
-        @media #{tablet} {
+        @media #{$tablet} {
             grid-template-columns: repeat(3, 120px) 1fr;
             grid-template-rows: repeat(2, 50px);
         } 
-        @media #{mobile} {
+        @media #{$mobile} {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 50px);
         } 
         .text-field {
             display: inline-block;
             height: 50px;
-            @media #{tablet} {
+            @media #{$tablet} {
                 grid-column: 1 / -1;
             } 
             input {
@@ -149,7 +149,7 @@
             color: $color--black;
             background-color: $color--primary;
             transition: .4s;
-            @media #{mobile} {
+            @media #{$mobile} {
                 grid-column: 1 / -1;
             } 
             &:hover {
