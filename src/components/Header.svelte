@@ -56,12 +56,12 @@
         z-index: 9;
         display: flex;
         align-items: flex-end;
-        @media #{mobile} {
+        @media #{$mobile} {
             padding: 14px 20px;
         }
         nav {
             margin-left: 40px;
-            @media #{mobile} {
+            @media #{$mobile} {
                 display: none;
             }
             ul{
@@ -94,7 +94,7 @@
             right: 40px;
             margin: auto;
             transition: .4s;
-            @media #{mobile} {
+            @media #{$mobile} {
                 right: 20px;
             }
             &:hover {
